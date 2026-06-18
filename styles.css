@@ -51,6 +51,17 @@ body {
 
 .hero__inner { max-width: 720px; margin: 0 auto; }
 
+.hero__photo {
+  display: block;
+  width: clamp(140px, 28vw, 210px);
+  height: clamp(140px, 28vw, 210px);
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.28);
+}
+
 .hero__eyebrow {
   font-weight: 700;
   letter-spacing: 0.08em;
