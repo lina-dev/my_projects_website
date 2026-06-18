@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A playful showcase of products I build — apps, side projects, and experiments.">
+  <title>Things I Build — Product Showcase</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__inner">
+      <p class="hero__eyebrow">✨ Welcome</p>
+      <h1 class="hero__title">Things I Build</h1>
+      <p class="hero__subtitle">
+        A colorful collection of apps, side projects, and experiments I've made.
+        Tap any card to dig into the details.
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <section class="container" aria-labelledby="products-heading">
+      <h2 id="products-heading" class="section-title">Products</h2>
+
+      <div class="product-grid">
+
+        <!-- ====================================================================
+             PRODUCT CARD TEMPLATE — COPY THIS block to add a new product.
+             Swap: the image (src + alt), title, blurb, tags, detail text,
+             and the link buttons. Keep external links as:
+                 target="_blank" rel="noopener noreferrer"
+             Keep every <img> with meaningful alt text.
+        ===================================================================== -->
+
+        <!-- Card 1 -->
+        <article class="card">
+          <button class="card__toggle" type="button" aria-expanded="false">
+            <img class="card__image" src="images/placeholder-1.svg"
+                 alt="Screenshot of Sunrise Tasks app" width="800" height="500" loading="lazy">
+            <div class="card__head">
+              <h3 class="card__title">Sunrise Tasks</h3>
+              <p class="card__blurb">A cheerful to-do app that makes planning your day feel light.</p>
+              <ul class="card__tags">
+                <li class="tag">Web App</li>
+                <li class="tag">React</li>
+              </ul>
+            </div>
+            <span class="card__hint" aria-hidden="true">Details</span>
+          </button>
+          <div class="card__detail">
+            <img class="card__detail-image" src="images/placeholder-1.svg"
+                 alt="Sunrise Tasks dashboard with colorful task lists" width="800" height="500" loading="lazy">
+            <p>
+              Sunrise Tasks started as a weekend experiment in making productivity feel
+              playful. It features drag-and-drop lists, gentle reminders, and a daily
+              focus mode. Built as a static front-end backed by a small API.
+            </p>
+            <div class="card__links">
+              <a class="btn btn--primary" href="https://example.com/sunrise"
+                 target="_blank" rel="noopener noreferrer">Live demo ↗</a>
+              <a class="btn" href="https://github.com/example/sunrise-tasks"
+                 target="_blank" rel="noopener noreferrer">Source ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card">
+          <button class="card__toggle" type="button" aria-expanded="false">
+            <img class="card__image" src="images/placeholder-2.svg"
+                 alt="Screenshot of Tide Notes app" width="800" height="500" loading="lazy">
+            <div class="card__head">
+              <h3 class="card__title">Tide Notes</h3>
+              <p class="card__blurb">Markdown notes that sync like waves — fast, calm, offline-first.</p>
+              <ul class="card__tags">
+                <li class="tag">Side Project</li>
+                <li class="tag">Offline-first</li>
+              </ul>
+            </div>
+            <span class="card__hint" aria-hidden="true">Details</span>
+          </button>
+          <div class="card__detail">
+            <img class="card__detail-image" src="images/placeholder-2.svg"
+                 alt="Tide Notes editor with a split markdown preview" width="800" height="500" loading="lazy">
+            <p>
+              Tide Notes is a minimalist note-taker focused on speed and privacy. Notes
+              live in the browser first and sync in the background. Great for jotting
+              ideas without friction.
+            </p>
+            <div class="card__links">
+              <a class="btn btn--primary" href="https://example.com/tide"
+                 target="_blank" rel="noopener noreferrer">Live demo ↗</a>
+              <a class="btn" href="https://github.com/example/tide-notes"
+                 target="_blank" rel="noopener noreferrer">Source ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card">
+          <button class="card__toggle" type="button" aria-expanded="false">
+            <img class="card__image" src="images/placeholder-3.svg"
+                 alt="Screenshot of Bloom Gallery app" width="800" height="500" loading="lazy">
+            <div class="card__head">
+              <h3 class="card__title">Bloom Gallery</h3>
+              <p class="card__blurb">A pastel image gallery with buttery-smooth lightbox transitions.</p>
+              <ul class="card__tags">
+                <li class="tag">Experiment</li>
+                <li class="tag">CSS</li>
+              </ul>
+            </div>
+            <span class="card__hint" aria-hidden="true">Details</span>
+          </button>
+          <div class="card__detail">
+            <img class="card__detail-image" src="images/placeholder-3.svg"
+                 alt="Bloom Gallery grid of pastel photographs" width="800" height="500" loading="lazy">
+            <p>
+              Bloom Gallery is a pure-CSS-and-vanilla-JS image gallery exploring fluid
+              grid layouts and accessible lightbox navigation. No frameworks, just the
+              platform.
+            </p>
+            <div class="card__links">
+              <a class="btn btn--primary" href="https://example.com/bloom"
+                 target="_blank" rel="noopener noreferrer">Live demo ↗</a>
+              <a class="btn" href="https://github.com/example/bloom-gallery"
+                 target="_blank" rel="noopener noreferrer">Source ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==== END CARDS ==== -->
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">Built with care.</p>
+    <nav class="footer__links" aria-label="Social links">
+      <a href="https://github.com/example" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      <a href="mailto:hello@example.com">Email</a>
+    </nav>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
