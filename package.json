@@ -1,0 +1,12 @@
+{
+  "name": "my-projects-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playful static showcase of products I build.",
+  "scripts": {
+    "test": "node test/run.js"
+  },
+  "devDependencies": {
+    "jsdom": "21.1.2"
+  }
+}
