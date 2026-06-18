@@ -57,6 +57,7 @@ fi
 
 SYNC_ARGS=(s3 sync "$SCRIPT_DIR/" "s3://$BUCKET/"
   --exclude ".git/*"
+  --exclude ".github/*"
   --exclude "node_modules/*"
   --exclude "docs/*"
   --exclude "test/*"
