@@ -26,13 +26,14 @@ test('has lang attribute and charset/viewport meta', () => {
   assert.ok(d.querySelector('meta[name="viewport"]'), 'missing viewport meta');
 });
 
-test('has at least one product card with toggle and detail', () => {
+test('has at least one product card with a title, image, and link', () => {
   const d = doc();
   const cards = d.querySelectorAll('.product-grid .card');
   assert.ok(cards.length >= 1, 'expected >=1 card');
   for (const c of cards) {
-    assert.ok(c.querySelector('.card__toggle'), 'card missing .card__toggle');
-    assert.ok(c.querySelector('.card__detail'), 'card missing .card__detail');
+    assert.ok(c.querySelector('.card__title'), 'card missing .card__title');
+    assert.ok(c.querySelector('.card__image'), 'card missing .card__image');
+    assert.ok(c.querySelector('.card__links a'), 'card missing a link');
   }
 });
 

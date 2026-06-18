@@ -15,8 +15,11 @@
       <p class="hero__eyebrow">✨ Welcome</p>
       <h1 class="hero__title">Things I Build</h1>
       <p class="hero__subtitle">
-        Hi, I'm Galina. This is a colorful collection of apps, side projects,
-        and experiments I've made. Scroll down to explore my work.
+        Hi, I'm Galina, a Machine Learning &amp; Software Engineer with 10+ years
+        building production-grade ML systems. I specialize in ML infrastructure and
+        real-time inference across audio, speech, LLMs, NLP, and RAG, turning
+        prototypes into reliable, observable AI features at scale. Scroll down to
+        explore my work.
       </p>
     </div>
   </header>
@@ -29,105 +32,46 @@
 
         <!-- ====================================================================
              PRODUCT CARD TEMPLATE — COPY THIS block to add a new product.
-             Swap: the image (src + alt), title, blurb, tags, detail text,
-             and the link buttons. Keep external links as:
+             Swap: the image (src + alt), title, short description, tags, and
+             the link button(s). Keep external links as:
                  target="_blank" rel="noopener noreferrer"
              Keep every <img> with meaningful alt text.
         ===================================================================== -->
 
         <!-- Card 1 -->
         <article class="card">
-          <button class="card__toggle" type="button" aria-expanded="false">
-            <img class="card__image" src="images/placeholder-1.svg"
-                 alt="Screenshot of Sunrise Tasks app" width="800" height="500" loading="lazy">
-            <div class="card__head">
-              <h3 class="card__title">Sunrise Tasks</h3>
-              <p class="card__blurb">A cheerful to-do app that makes planning your day feel light.</p>
-              <ul class="card__tags">
-                <li class="tag">Web App</li>
-                <li class="tag">React</li>
-              </ul>
-            </div>
-            <span class="card__hint" aria-hidden="true">Details</span>
-          </button>
-          <div class="card__detail">
-            <img class="card__detail-image" src="images/placeholder-1.svg"
-                 alt="Sunrise Tasks dashboard with colorful task lists" width="800" height="500" loading="lazy">
-            <p>
-              Sunrise Tasks started as a weekend experiment in making productivity feel
-              playful. It features drag-and-drop lists, gentle reminders, and a daily
-              focus mode. Built as a static front-end backed by a small API.
-            </p>
-            <div class="card__links">
-              <a class="btn btn--primary" href="https://example.com/sunrise"
-                 target="_blank" rel="noopener noreferrer">Live demo ↗</a>
-              <a class="btn" href="https://github.com/example/sunrise-tasks"
-                 target="_blank" rel="noopener noreferrer">Source ↗</a>
-            </div>
+          <img class="card__image" src="images/agents.png"
+               alt="Screenshot of the Audio Repair Agent workflow" width="1902" height="593" loading="lazy">
+          <div class="card__head">
+            <h3 class="card__title">Audio Repair Agent</h3>
+            <p class="card__blurb">An agentic workflow that recovers corrupted audio/video files ffmpeg can't decode, escalating from a deterministic fast-path to a constrained, tool-using LLM agent.</p>
+            <ul class="card__tags">
+              <li class="tag">Agent</li>
+              <li class="tag">Python</li>
+              <li class="tag">audio</li>
+            </ul>
+          </div>
+          <div class="card__links">
+            <a class="btn btn--primary" href="https://github.com/lina-dev/agent_self_heal_file"
+               target="_blank" rel="noopener noreferrer">Source ↗</a>
           </div>
         </article>
 
         <!-- Card 2 -->
         <article class="card">
-          <button class="card__toggle" type="button" aria-expanded="false">
-            <img class="card__image" src="images/placeholder-2.svg"
-                 alt="Screenshot of Tide Notes app" width="800" height="500" loading="lazy">
-            <div class="card__head">
-              <h3 class="card__title">Tide Notes</h3>
-              <p class="card__blurb">Markdown notes that sync like waves — fast, calm, offline-first.</p>
-              <ul class="card__tags">
-                <li class="tag">Side Project</li>
-                <li class="tag">Offline-first</li>
-              </ul>
-            </div>
-            <span class="card__hint" aria-hidden="true">Details</span>
-          </button>
-          <div class="card__detail">
-            <img class="card__detail-image" src="images/placeholder-2.svg"
-                 alt="Tide Notes editor with a split markdown preview" width="800" height="500" loading="lazy">
-            <p>
-              Tide Notes is a minimalist note-taker focused on speed and privacy. Notes
-              live in the browser first and sync in the background. Great for jotting
-              ideas without friction.
-            </p>
-            <div class="card__links">
-              <a class="btn btn--primary" href="https://example.com/tide"
-                 target="_blank" rel="noopener noreferrer">Live demo ↗</a>
-              <a class="btn" href="https://github.com/example/tide-notes"
-                 target="_blank" rel="noopener noreferrer">Source ↗</a>
-            </div>
+          <img class="card__image" src="images/music_id.jpeg"
+               alt="Screenshot of the Copyright Compliance System" width="1902" height="593" loading="lazy">
+          <div class="card__head">
+            <h3 class="card__title">Copyright Compliance System</h3>
+            <p class="card__blurb">Detects copyrighted music in any media file, identifies the composition and rights holder, and cleanly removes the music while preserving dialogue and effects.</p>
+            <ul class="card__tags">
+              <li class="tag">ML workflow</li>
+              <li class="tag">audio</li>
+            </ul>
           </div>
-        </article>
-
-        <!-- Card 3 -->
-        <article class="card">
-          <button class="card__toggle" type="button" aria-expanded="false">
-            <img class="card__image" src="images/placeholder-3.svg"
-                 alt="Screenshot of Bloom Gallery app" width="800" height="500" loading="lazy">
-            <div class="card__head">
-              <h3 class="card__title">Bloom Gallery</h3>
-              <p class="card__blurb">A pastel image gallery with buttery-smooth lightbox transitions.</p>
-              <ul class="card__tags">
-                <li class="tag">Experiment</li>
-                <li class="tag">CSS</li>
-              </ul>
-            </div>
-            <span class="card__hint" aria-hidden="true">Details</span>
-          </button>
-          <div class="card__detail">
-            <img class="card__detail-image" src="images/placeholder-3.svg"
-                 alt="Bloom Gallery grid of pastel photographs" width="800" height="500" loading="lazy">
-            <p>
-              Bloom Gallery is a pure-CSS-and-vanilla-JS image gallery exploring fluid
-              grid layouts and accessible lightbox navigation. No frameworks, just the
-              platform.
-            </p>
-            <div class="card__links">
-              <a class="btn btn--primary" href="https://example.com/bloom"
-                 target="_blank" rel="noopener noreferrer">Live demo ↗</a>
-              <a class="btn" href="https://github.com/example/bloom-gallery"
-                 target="_blank" rel="noopener noreferrer">Source ↗</a>
-            </div>
+          <div class="card__links">
+            <a class="btn btn--primary" href="https://www.linkedin.com/posts/audioshake_today-were-launching-the-audioshake-copyright-activity-7465091993338290178-QsxO?utm_source=share&utm_medium=member_desktop&rcm=ACoAABq0W28B1d-K0mRIc5DZqM-f1TvKdu4BTR4"
+               target="_blank" rel="noopener noreferrer">Publication ↗</a>
           </div>
         </article>
 
