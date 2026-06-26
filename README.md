@@ -1,18 +1,4 @@
 
-A playful, colorful **static website** for publishing the products you build.
-No frameworks, no build step — just HTML, CSS, and a little vanilla JavaScript.
-Deploys to **AWS S3 static website hosting**.
-
-## Features
-
-- Animated, colorful hero.
-- Responsive grid of product cards, each leading with an image.
-- Click (or keyboard Enter/Space) to **expand a card in place** for a longer
-  writeup, larger image, and links — no page navigation.
-- Accessible: keyboard-operable, `aria-expanded` state, alt text on every image.
-- Respects `prefers-reduced-motion`.
-- Security-conscious: external links use `rel="noopener noreferrer"`; no inline
-  scripts or `innerHTML` of dynamic content.
 
 ## Project layout
 
