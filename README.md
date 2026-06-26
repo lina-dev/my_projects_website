@@ -1,4 +1,3 @@
-# Things I Build — Product Showcase
 
 A playful, colorful **static website** for publishing the products you build.
 No frameworks, no build step — just HTML, CSS, and a little vanilla JavaScript.
